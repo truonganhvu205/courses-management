@@ -1,4 +1,4 @@
-A basic CRUD Courses Management
+- A basic CRUD Courses Management
 
 #### NPM Packages
 
