@@ -1,3 +1,5 @@
+A basic CRUD Courses Management
+
 #### NPM Packages
 
 ```
