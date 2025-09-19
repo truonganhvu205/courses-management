@@ -6,6 +6,7 @@ npm init
 npm i express
 npm i epress-handlebars
 npm i mongoose
+npm i mongoose-slug-generator
 
 npm i nodemon --save-dev
 npm i morgan --save-dev
