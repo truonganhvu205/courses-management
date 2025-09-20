@@ -9,8 +9,7 @@ router.post('/store', siteController.store)
 router.get('/edit/:id', siteController.edit)
 router.put('/:id', siteController.update)
 
-// router.get('/update', siteController.update)
-// router.get('/delete', siteController.delete)
+router.delete('/:id', siteController.delete)
 
 router.get('/:slug', siteController.detail)
 router.get('/', siteController.index)
