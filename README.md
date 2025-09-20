@@ -1,4 +1,4 @@
-- A basic CRUD Courses Management
+- A basic CRUD Courses Management.
 
 #### NPM Packages
 
@@ -9,6 +9,7 @@ npm i express
 npm i epress-handlebars
 npm i mongoose
 npm i mongoose-slug-generator
+npm install method-override
 
 npm i nodemon --save-dev
 npm i morgan --save-dev

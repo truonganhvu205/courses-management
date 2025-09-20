@@ -9,29 +9,43 @@ class SiteController {
     }
 
     // GET /:slug
-    show(req, res, next) {
+    detail(req, res, next) {
         Course.findOne({slug: req.params.slug}).lean()
             .then(course => res.render('courses/read', {course}))
             .catch(next)
     }
 
-    // GET /courses/create
+    // GET /create
     create(req, res, next) {
         res.render('courses/create')
     }
 
-    // POST /courses/store
+    // POST /store
     store(req, res, next) {
         const formData = req.body
         formData.image = `https://i.ytimg.com/vi/${formData.videoId}/hqdefault.jpg`
 
         const course = new Course(formData)
         course.save()
-            .then(() => res.redirect('/courses'))
+            .then(() => res.redirect('/'))
             .catch(next)
     }
 
-    //
+    // GET /edit/:id
+    edit(req, res, next) {
+        Course.findById(req.params.id).lean()
+            .then(course => res.render('courses/edit', {course}))
+            .catch(next)
+    }
+
+    // PUT /:id
+    update(req, res, next) {
+        Course.updateOne({_id: req.params.id}, req.body)
+            .then(() => res.redirect('/'))
+            .catch(next)
+    }
+
+    // DELETE
 }
 
 module.exports = new SiteController()
