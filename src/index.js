@@ -13,7 +13,6 @@ db.connect()
 const app = express()
 
 app.use(morgan('combined'))
-
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(methodOverride('_method'))
@@ -26,7 +25,6 @@ app.engine('.hbs', engine({
 }))
 app.set('view engine', '.hbs')
 app.set('views', path.join(__dirname, 'resources', 'views'))
-
 app.use(express.static(path.join(__dirname, 'public')))
 
 routes(app)
