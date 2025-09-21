@@ -17,7 +17,6 @@
 /
 
 #### NPM Packages
-
 ```
 npm init
 
@@ -37,7 +36,6 @@ npm install husky --save-dev
 ```
 
 #### package.json
-
 ```
 "scripts": {
     "start": "nodemon --inspect src/index.js",
