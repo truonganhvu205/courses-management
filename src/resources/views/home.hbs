@@ -1,7 +1,7 @@
 <div class="my-4">
     <div class="d-flex justify-content-end">
         <button type="button" class="btn btn-primary me-4">
-            <a class="nav-link" aria-current="page" href="/courses/create">Add course</a>
+            <a class="nav-link" aria-current="page" href="/create">Add course</a>
         </button>
     </div>
 
@@ -25,7 +25,7 @@
                     </td>
                     <td>{{this.createdAt}}</td>
                     <td>{{this.updatedAt}}</td>
-                    <td class="d-flex justify-content-between">
+                    <td class="d-flex justify-content-evenly">
                         <a href="/edit/{{this._id}}">Edit</a>
                         <a 
                         href="/delete/{{this._id}}"
