@@ -13,7 +13,7 @@ db.connect()
 const app = express()
 
 app.use(morgan('combined'))
-app.use(express.urlencoded({extended: true}))
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(methodOverride('_method'))
 
