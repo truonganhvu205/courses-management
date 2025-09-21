@@ -1,19 +1,16 @@
+#### Description
 - A basic CRUD Courses Management.
+- Path
+/create
+/store
 
-#### Path
+/edit/:id
+/:id
 
-- /
+/:id
 
-- /courses/create
-- /courses/store
-
-- /courses/edit/:id
-- /courses/:id
-
-- /courses/:id
-
-- /courses/:slug
-- /courses/
+/:slug
+/
 
 #### NPM Packages
 
